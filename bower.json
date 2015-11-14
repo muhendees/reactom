@@ -1,0 +1,21 @@
+{
+  "name": "reactom",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Muhendees <muhendees@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.14.2"
+  }
+}
