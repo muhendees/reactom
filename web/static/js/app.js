@@ -21,8 +21,9 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // import socket from "./socket"
 
 import CommentBox from "./commentbox"
+
 ReactDOM.render(
         <CommentBox url="/api/comments" pollInterval={2000} />,
-    document.getElementById('content')
+    document.getElementById('jumbotron')
 );
 

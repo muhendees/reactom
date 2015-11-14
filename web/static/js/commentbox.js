@@ -20,6 +20,27 @@ var Comment = React.createClass({
 
 });
 
+var CommentList = React.createClass({
+    render: function() {
+        var commentNodes = this.props.data.map(function(comment) {
+            return (
+                    <Comment author={comment.author} key={comment.id}>
+                    {comment.text}
+                </Comment>
+            );
+
+        });
+        
+        return (
+                <div className="commentList">
+                {commentNodes}
+            </div>
+        );
+
+    }
+
+});
+
 var CommentBox = React.createClass({
     loadCommentsFromServer: function() {
         return $.ajax({
@@ -86,26 +107,6 @@ var CommentBox = React.createClass({
 
 });
 
-var CommentList = React.createClass({
-    render: function() {
-        var commentNodes = this.props.data.map(function(comment) {
-            return (
-                    <Comment author={comment.author} key={comment.id}>
-                    {comment.text}
-                </Comment>
-            );
-
-        });
-        return (
-                <div className="commentList">
-                {commentNodes}
-            </div>
-        );
-
-    }
-
-});
-console.log(typeof this.props.data);
 var CommentForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
