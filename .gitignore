@@ -24,7 +24,7 @@ erl_crash.dump
 /config/prod.secret.exs
 
 
-DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 .tern-port
