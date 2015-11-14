@@ -1,5 +1,7 @@
 # Reactom
 
+This repo is created to test Phoenix json api with React js [`tutorial`] (https://facebook.github.io/react/docs/tutorial.html)
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`
