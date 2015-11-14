@@ -105,7 +105,7 @@ var CommentList = React.createClass({
     }
 
 });
-
+console.log(typeof this.props.data);
 var CommentForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
