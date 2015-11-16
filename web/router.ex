@@ -22,6 +22,9 @@ defmodule Reactom.Router do
   # Other scopes may use custom stacks.
   scope "/api", Reactom do
     pipe_through :api
-    resources "/comments", CommentController, except: [:new, :edit]
+    resources "/articles", ArticleController, except: [:new, :edit]
+    resources "/commeaaaaaants", CommentController, except: [:new, :edit]
+    resources "/products", ProductController, except: [:new, :edit]
+    resources "/comments", DataController, except: [:new, :edit]
   end
 end
